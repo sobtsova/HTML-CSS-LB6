@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 1 - Masonry Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="megadeth-page">
+
+    <div class="container">
+        <div class="block1">
+            <h1>THE BIG 4</h1> 
+        </div>
+        <div class="block2">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="page2.html" class="active"><p>Thrash metal</p></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="block3">
+            <p>The "Big Four" of thrash metal—Metallica, Slayer, Megadeth, and Anthrax—are considered the most influential bands in the genre. Their groundbreaking albums, such as Metallica’s Master of Puppets and Slayer’s Reign in Blood, set new standards for speed, complexity, and lyrical themes, making them legends of the heavy metal scene.</p>
+        </div>
+        <div class="block4">
+            <p>Formed in the early 1980s, the "Big Four" of thrash metal—Metallica, Slayer, Megadeth, and Anthrax—rose from the gritty underground scene to become global icons of heavy metal. These bands pushed the boundaries of speed, aggression, and lyrical content, creating a raw and intense style that set them apart from traditional heavy metal. Not only did they pioneer thrash metal’s unique sound, but they also helped shape the genre’s identity, introducing it to mainstream audiences through groundbreaking albums, relentless touring, and unforgettable live performances. Their influence culminated in headlining massive festivals, such as the historic "Big Four" concert in 2010, and selling millions of albums worldwide, solidifying their legacy as the true giants of thrash metal.</p>
+        </div>
+        <div class="block5">
+            <h1>Генератор Masonry</h1>
+            <form id="masonryForm">
+                <label for="columns">Кількість колонок:</label>
+                <input type="number" id="columns" name="columns" min="1" max="6" required>
+                <label for="items">Кількість елементів:</label>
+                <input type="number" id="items" name="items" min="1" max="20" required>
+                <button type="button" onclick="generateMasonry()">Створити</button>
+                <button type="button" onclick="editBlocks()">Змінити</button>
+            </form>
+            <div id="masonryContainer"></div>
+            <div id="editorContainer" style="display: none;">
+                <h3>Редагувати блоки</h3>
+                <textarea id="blockSizes" rows="10" cols="30" placeholder="Формат: ширина, висота (кожен блок з нового рядка)"></textarea>
+                <button type="button" onclick="applyChanges()">Застосувати зміни</button>
+            </div>
+        </div>
+        <div class="block6">
+            <p>The "Big Four" bands revolutionized thrash metal with their raw energy and powerful stage presence. Metallica brought complex songwriting, Slayer added brutal speed, Megadeth highlighted technical proficiency, and Anthrax introduced a mix of punk and metal elements, together shaping the face of modern metal music.</p>
+        </div>
+        <div class="block7">
+            <h2>Contact us for more info: || Insta: TheBig4 || Email: TheBig4@gmail.com || Phone: +1 386 543-73-21</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
